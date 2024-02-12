@@ -45,21 +45,3 @@ const Featured = () => {
 };
 
 export default Featured;
-
-<div className="cards grid md:grid-cols-2 gap-10 border-t-[1px] border-zinc-700 mt-14 py-14 px-20">
-  <div className="card h-[80vh] bg-red-600 rounded-xl overflow-hidden">
-    <img
-      className="w-full h-full bg-cover"
-      src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"
-      alt="Picture here"
-    />
-  </div>
-
-  <div className="card h-[80vh] bg-red-600 rounded-xl overflow-hidden">
-    <img
-      className="w-full h-full bg-cover"
-      src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg"
-      alt="Picture here"
-    />
-  </div>
-</div>;
