@@ -10,11 +10,13 @@ const Featured = () => {
       </div>
 
       <div className="cards relative grid md:grid-cols-2 gap-10 border-t-[1px] border-zinc-700 mt-14 py-14 px-20">
-        <div className="heading absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] uppercase">
-          <h1 className="text-8xl font-semibold tracking-tighter">Fyde</h1>
-        </div>
         <div className="cardContainer h-[80vh] rounded-xl overflow-hidden">
           <div className="card w-full h-full ">
+            {/* <h1 className="heading font-['Neue_Montreal'] absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] uppercase text-8xl leading-none font-semibold tracking-tighter z-[9] text-[#cdea68] ">
+              {"FYDE".split("").map((item, index) => (
+                <span key={index}>{item}</span>
+              ))}
+            </h1> */}
             <img
               className="w-full h-full bg-cover"
               src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png"
@@ -24,6 +26,12 @@ const Featured = () => {
         </div>
         <div className="cardContainer border-[1px] border-zinc-800 h-[80vh] rounded-xl overflow-hidden">
           <div className="card w-full h-full ">
+            <h1 className="heading font-['Neue_Montreal'] absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] uppercase text-8xl leading-none font-semibold tracking-tighter z-[9] text-[#cdea68] ">
+              {"VISE".split("").map((item, index) => (
+                <span key={index}>{item}</span>
+              ))}
+            </h1>
+
             <img
               className="w-full h-full bg-cover"
               src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg"
