@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { IoArrowUpOutline } from "react-icons/io5";
 
@@ -9,7 +10,12 @@ const LandingPage = () => {
           <div key={index} className="masker">
             <div className="w-fit flex items-center">
               {index == 1 && (
-                <div className=" mr-[1vw] w-[8vw] h-[5vw] rounded-md bg-red-600"></div>
+                <motion.div
+                  initial={{ width: 0 }}
+                  animate={{ width: "8vw" }}
+                  transition={{ ease: [0.45, 0, 0.55, 1], duration: 1 }}
+                  className=" mr-[1vw] w-[8vw] h-[5vw] rounded-md bg-red-600"
+                ></motion.div>
               )}
               <h1 className="leading-[6.3vw] uppercase font-['Founders_Grotesk'] text-[7.2vw] tracking-tighter font-medium flex items-center">
                 {item}
