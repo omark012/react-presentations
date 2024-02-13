@@ -1,8 +1,28 @@
-import React from "react";
-
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import React, { useState } from "react";
 const Navbar = () => {
+  const [hidden, setHidden] = useState(false);
+
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latestScrollY) => {
+    const previousScrollY = scrollY.getPrevious();
+    if (latestScrollY > previousScrollY && latestScrollY > 100) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+  });
+
   return (
-    <div
+    <motion.nav
+      variants={{
+        visible: { y: "0" },
+        hidden: { y: "-100%" },
+      }}
+      initial={{ y: "0" }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ ease: [0.45, 0, 0.55, 1], duration: 1 }}
       style={{ backdropFilter: "blur(5px)" }}
       className="fixed top-0 z-[999] w-full px-20 py-8 flex justify-between items-center  font-['Neue_Montreal']"
     >
@@ -49,7 +69,7 @@ const Navbar = () => {
           )
         )}
       </div>
-    </div>
+    </motion.nav>
   );
 };
 

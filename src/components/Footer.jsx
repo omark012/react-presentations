@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-2 w-full h-screen bg-zinc-900 py-10 px-20 font-['Neue_Montreal']">
+    <div className="relative grid grid cols-1 w-full h-auto bg-zinc-900 py-10 font-['Neue_Montreal'] px-5 md:px-20 md:grid-cols-2">
       <div className="box-1 h-full flex flex-col justify-between">
         <div className="heading">
           <h1 className="text-[6vw] uppercase font-semibold tracking-tighter leading-none">
@@ -14,6 +14,7 @@ const Footer = () => {
         </div>
 
         <svg
+          className="absolute bottom-[1%] left-[5%] md:static "
           width="72"
           height="30"
           viewBox="0 0 72 30"
@@ -93,7 +94,7 @@ const Footer = () => {
               "Vancouver, Canada",
               "hello@ochi.design ",
             ].map((item, index) => (
-              <li className={`list-none ${index == 2 && "mt-4"}`}>
+              <li className={`list-none ${index == 2 && "my-4"}`}>
                 <a
                   key={index}
                   href=""

@@ -2,7 +2,7 @@ import React from "react";
 
 const Cards = () => {
   return (
-    <div className=" w-full h-screen grid md:grid-cols-2 gap-5 items-center px-20">
+    <div className=" w-full h-auto md:h-screen grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-5 md:gap-5 md:px-20">
       <div className="cardContainer h-[50vh]">
         <div className="card relative flex items-center justify-center rounded-xl h-full bg-[#004d43]">
           <img
@@ -14,7 +14,7 @@ const Cards = () => {
           </button>
         </div>
       </div>
-      <div className="cardContainer grid grid-cols-2 items-center gap-5 h-[50vh]">
+      <div className="cardContainer grid grid-cols-1 md:grid-cols-2 items-center gap-10 h-[100vh] md:gap-5 md:h-[50vh]">
         <div className="card relative flex items-center justify-center rounded-xl h-full bg-[#192826]">
           <img
             src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg"

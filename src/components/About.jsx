@@ -3,14 +3,14 @@ import aboutImg from "../assets/about.jpg";
 
 const About = () => {
   return (
-    <div className="w-full rounded-2xl py-20 text-black bg-[#cdea68] font-['Neue_Montreal,Roboto,sans-serif']">
-      <h1 className="text-[4vw] px-20 leading-[4.5vw] tracking-tight">
+    <div className="w-full rounded-tl-2xl rounded-tr-2xl py-20 text-black bg-[#cdea68] font-['Neue_Montreal,Roboto,sans-serif']">
+      <h1 className="text-[8vw] px-5 leading-[8vw] md:text-[4vw] md:px-20 md:leading-[4.5vw]  tracking-tight">
         Ochi is a strategic partner for fast-grow­ing tech businesses that need
         to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire great
         peo­ple.{" "}
       </h1>
 
-      <div className="px-20 grid md:grid-cols-2 w-full border-t-[1px] pt-10 mt-12 border-[#98ac52] ">
+      <div className="px-5 grid grid-cols-1 md:grid-cols-2 gap-10 w-full border-t-[1px] pt-10 mt-12 border-[#98ac52] md:px-20 ">
         {/* Content */}
         <div className="space-y-8">
           <h1 className="text-5xl">Our approach:</h1>
@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         {/* Image */}
-        <div className="w-full h-[70vh]">
+        <div className="w-full h-auto lg:h-[70vh]">
           <img
             className="w-full h-full rounded-xl"
             src={aboutImg}

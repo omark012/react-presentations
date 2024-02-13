@@ -18,9 +18,15 @@ const LandingPage = () => {
                 <motion.div
                   initial={{ width: 0 }}
                   animate={{ width: "8vw" }}
-                  transition={{ ease: [0.45, 0, 0.55, 1], duration: 1 }}
-                  className=" mr-[1vw] w-[8vw] h-[5vw] rounded-md bg-red-600"
-                ></motion.div>
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.5 }}
+                  className=" mr-[1vw] w-[8vw] h-full rounded-md overflow-hidden"
+                >
+                  <img
+                    className="h-full w-full bg-cover"
+                    src="https://images.unsplash.com/photo-1704230972956-21ec325a910d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt=""
+                  />
+                </motion.div>
               )}
               <h1 className="leading-[6.3vw] uppercase font-['Founders_Grotesk'] text-[7.2vw] tracking-tighter font-medium flex items-center">
                 {item}
