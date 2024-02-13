@@ -1,7 +1,11 @@
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import React, { useState } from "react";
+import { RiMenu3Fill } from "react-icons/ri";
+
 const Navbar = () => {
+  // Methods to hide navbar on down Scroll
   const [hidden, setHidden] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const { scrollY } = useScroll();
 
@@ -24,7 +28,7 @@ const Navbar = () => {
       animate={hidden ? "hidden" : "visible"}
       transition={{ ease: [0.45, 0, 0.55, 1], duration: 1 }}
       style={{ backdropFilter: "blur(5px)" }}
-      className="fixed top-0 z-[999] w-full px-20 py-8 flex justify-between items-center  font-['Neue_Montreal']"
+      className="fixed top-0 z-[999] w-full  py-8 flex justify-between items-center  font-['Neue_Montreal'] px-5 md:px-20"
     >
       <div className="logo">
         <svg
@@ -57,18 +61,28 @@ const Navbar = () => {
         </svg>
       </div>
 
-      <div className="links flex gap-10 capitalize ">
+      <div
+        className={`links ${
+          showMenu ? "flex" : "hidden"
+        } hidden md:flex gap-10 capitalize`}
+      >
         {["Services", "Our Work", "About us", "Insights", "Contact"].map(
           (link, index) => (
             <a
               key={index}
-              className={`text-lg font-light ${index == 4 && "ml-32"}`}
+              className={`text-lg font-light cursor-pointer whitespace-nowrap ${
+                index == 4 && "ml-28"
+              } transition-all duration-150 ease-[cubic-bezier(0.36, 0, 0.66, -0.56)] hover:border-b-[1px] hover:border-white`}
             >
               {link}
             </a>
           )
         )}
       </div>
+
+      <button className="menu-btn text-3xl block md:hidden focus:outline-none cursor-pointer">
+        <RiMenu3Fill />
+      </button>
     </motion.nav>
   );
 };

@@ -53,9 +53,8 @@ const Footer = () => {
           <div className="details flex flex-col">
             S:
             {["Facebook", "Instagram", "LinkedIn"].map((item, index) => (
-              <li className="list-none">
+              <li className="list-none" key={index}>
                 <a
-                  key={index}
                   href=""
                   className="text-lg underline underline-offset-4 hover:no-underline"
                 >
@@ -75,9 +74,8 @@ const Footer = () => {
               "Insights",
               "Contact us",
             ].map((item, index) => (
-              <li className="list-none">
+              <li className="list-none" key={index}>
                 <a
-                  key={index}
                   href=""
                   className="text-lg underline underline-offset-4 hover:no-underline"
                 >
@@ -94,9 +92,8 @@ const Footer = () => {
               "Vancouver, Canada",
               "hello@ochi.design ",
             ].map((item, index) => (
-              <li className={`list-none ${index == 2 && "my-4"}`}>
+              <li key={index} className={`list-none ${index == 2 && "my-4"}`}>
                 <a
-                  key={index}
                   href=""
                   className="text-lg underline underline-offset-4 hover:no-underline"
                 >

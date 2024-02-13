@@ -10,25 +10,25 @@ const LandingPage = () => {
       data-scroll-speed="-.3"
       className="w-full h-screen bg-zinc-900 pt-1"
     >
-      <div className="textstructure mt-52 px-20">
+      <div className="textstructure mt-52 px-5 md:px-20">
         {["We create", "Eye-opening", "Presentations"].map((item, index) => (
           <div key={index} className="masker">
             <div className="w-fit flex items-center">
               {index == 1 && (
                 <motion.div
                   initial={{ width: 0 }}
-                  animate={{ width: "8vw" }}
-                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1.5 }}
-                  className=" mr-[1vw] w-[8vw] h-full rounded-md overflow-hidden"
+                  animate={{ width: "10vw" }}
+                  transition={{ ease: [0.76, 0, 0.24, 1], duration: 1 }}
+                  className=" mr-[1vw] w-[1em] h-full rounded-md overflow-hidden"
                 >
                   <img
-                    className="h-full w-full bg-cover"
-                    src="https://images.unsplash.com/photo-1704230972956-21ec325a910d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    className="h-full w-full bg-cover bg-center"
+                    src="https://ochi.design/wp-content/uploads/2022/04/content-image01.jpg"
                     alt=""
                   />
                 </motion.div>
               )}
-              <h1 className="leading-[6.3vw] uppercase font-['Founders_Grotesk'] text-[7.2vw] tracking-tighter font-medium flex items-center">
+              <h1 className=" uppercase font-['Founders_Grotesk'] text-[2.5rem] leading-10 tracking-tighter md:text-[7.2vw] md:leading-[6.3vw]  font-medium flex items-center">
                 {item}
               </h1>
             </div>
@@ -36,7 +36,7 @@ const LandingPage = () => {
         ))}
       </div>
 
-      <div className="border-t-[1px] mt-20 border-zinc-700 flex justify-between items-center py-3 px-20">
+      <div className="border-t-[1px] mt-20 border-zinc-700 flex flex-col justify-between gap-7 py-3 px-5 md:px-20 md:flex-row md:justify-between md:items-center md:gap-0">
         {/* Creating 2 paragraph here */}
         {[
           "For public and private companies",
