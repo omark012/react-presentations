@@ -1,20 +1,12 @@
-# React + Vite
+> # Presentation React App
+### Live Demo :  [Go to Presentation app](https://react-presentations.netlify.app)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Developed a presentation making website UI using React and Tailwind CSS with a mobile-first responsive design approach, so it looks great on any device. Designed a responsive navbar with toggle menu, search bar icon, and scrollspy functionality for improved user experience.
+To make the website even more interactive, I implemented multiple components using grid and flexbox layouts. Additionally, I used Framer Motion, an open-source motion library for React made by Framer, to build animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Contributing
+Contributions are welcome! If you have any suggestions or find any issues, please feel free to open an issue or a pull request.
 
-Steps for Project React-website setup
 
-<!-- Setup tailwind CSS -->
-<!-- Create Navbar Component -->
-<!-- Create Landing Page Component -->
-<!-- Marquee Component -->
-<!-- About Component -->
-<!-- Playful -->
-<!-- Card component 1 -->
-<!-- Card component 1 -->
-<!-- Footer -->
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
